@@ -1,0 +1,514 @@
+/*colors*/
+/*breakpoints*/
+@font-face {
+  font-family: Livvicthin;
+  src: url(../Livvic/Livvic-Thin.ttf);
+}
+@font-face {
+  font-family: LivvicExtraLight;
+  src: url(../Livvic/Livvic-ExtraLight.ttf);
+}
+@font-face {
+  font-family: LivvicLight;
+  src: url(../Livvic/Livvic-Light.ttf);
+}
+@font-face {
+  font-family: LivvicMedium;
+  src: url(../Livvic/Livvic-Medium.ttf);
+}
+@font-face {
+  font-family: LivvicBold;
+  src: url(../Livvic/Livvic-Bold.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #0A0A0A;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Livvic", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #0A0A0A;
+  overflow-x: hidden;
+}
+body .footer {
+  margin-top: auto;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
+.container {
+  max-width: 120rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.btn {
+  background: 14B1BB;
+  background-image: linear-gradient(to bottom, 14B1BB, 14B1BB);
+  border-radius: 50px;
+  font-family: "Livvic", sans-serif;
+  color: white;
+  font-size: 18px;
+  background: #14B1BB;
+  padding: 15px 25px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.btn.bg--light {
+  color: #14B1BB;
+  background: #ffffff;
+  border-color: #14B1BB;
+  transition: 0.5s ease;
+}
+.btn.bg--light:hover {
+  background: #14B1BB;
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+.btn.bg--primary {
+  color: #ffffff;
+  background-color: #14B1BB;
+  transition: 0.5s ease;
+}
+.btn.bg--primary:hover {
+  background: #38898d;
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/slider3.jpg");
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 760px) {
+  .footer_wrapper {
+    flex-direction: row;
+  }
+}
+.footer .column {
+  margin: 5rem 1rem 1rem 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  font-family: LivvicLight;
+  font-weight: 500;
+}
+@media screen and (min-width: 760px) {
+  .footer .column {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .footer .column:nth-of-type(2) {
+    text-align: left;
+  }
+  .footer .column:nth-of-type(3) .contact_icons {
+    margin-bottom: 5rem 0rem;
+  }
+  .footer .column:nth-of-type(3) .contact_icons .contact_iconings {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .column:nth-of-type(3) .contact_icons .contact_iconings i {
+    margin-right: 1rem;
+  }
+}
+.footer .column .footer_text {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.footer .column .footer_text2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: left;
+}
+.footer .column h4 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-family: LivvicMedium;
+  letter-spacing: 1px;
+}
+.footer .column .socialistic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .column .socialistic i {
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #38898d;
+}
+.footer .column .socialistic i:nth-of-type(1) {
+  padding: 1rem 1.5rem;
+}
+.footer .column .socialistic i:nth-of-type(2) {
+  padding: 1rem 1.1rem;
+  margin-left: 1rem;
+}
+.footer .column .socialistic i:nth-of-type(3) {
+  padding: 1rem 1.2rem;
+  margin-left: 1rem;
+}
+.footer .branding {
+  font-family: LivvicBold;
+  font-size: 40px;
+  color: #14B1BB;
+  transition: 0.3s ease;
+  align-items: center;
+}
+.footer .branding p {
+  align-items: center;
+}
+.footer .branding .colorchanger {
+  transition: 0.3s ease;
+  color: #ffffff;
+}
+.footer .contact_icons .contact_iconings {
+  margin-bottom: 1rem;
+}
+.footer .contact_icons i {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.footer .contact_icons p {
+  color: white;
+  font-size: 1.9rem;
+}
+.footer a {
+  color: white;
+  font-size: 1.9rem;
+  font-family: LivvicExtralight;
+  font-weight: 600;
+}
+.footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer input {
+  border: 1px solid #ffffff;
+  align-items: baseline;
+  padding: 1rem 2rem;
+  background: transparent;
+  width: 100%;
+  font-family: LivvicLight;
+  font-size: 1.9rem;
+  color: white;
+}
+.footer .submit {
+  display: flex;
+  justify-content: baseline;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: baseline;
+  font-family: LivvicBold;
+  margin-bottom: 5rem;
+}
+.footer .submit input {
+  border-color: #14B1BB;
+  margin-top: 4rem;
+  width: auto;
+  border-radius: 5px;
+  font-size: 1.7rem;
+}
+.footer .submit input:hover {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #14B1BB;
+}
+.footer .footer_footer {
+  border-top: 1px solid #8C8C8C;
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: LivvicLight;
+  color: white;
+}
+.footer .footer_footer p {
+  margin-top: 2rem;
+}
+.footer .footer_footer .home_contact {
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer_footer .home_contact a {
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  font-family: LivvicLight;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.contact_summary {
+  display: none;
+  background-color: #14B1BB;
+}
+@media screen and (min-width: 760px) {
+  .contact_summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 13.6px;
+  }
+}
+.contact_summary .address {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: LivvicMedium;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+}
+.contact_summary .socials {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  color: white;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+.header .branding {
+  font-family: LivvicBold;
+  font-size: 40px;
+  color: #14B1BB;
+  transition: 0.3s ease;
+}
+.header .branding .colorchanger {
+  transition: 0.3s ease;
+  color: #0A0A0A;
+}
+@media screen and (min-width: 760px) {
+  .header {
+    transition: 0.3s ease;
+  }
+  .header.blue {
+    background-color: hsla(0, 0%, 0%, 0.733);
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease;
+  }
+  .header.blue .branding {
+    color: #14B1BB;
+    opacity: 1;
+  }
+  .header.blue .branding .colorchanger {
+    color: #ffffff;
+  }
+  .header.blue .header_nav_links a {
+    color: white;
+  }
+}
+.header .kamote {
+  pointer-events: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #0A0A0A;
+  transition: 0.5s ease-in;
+  z-index: -1;
+}
+.header .kamote.open {
+  position: fixed;
+  opacity: 0.8;
+  transition: 0.5s ease-out;
+}
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 760px) {
+  .header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+  }
+}
+.header_wrapper .branding {
+  z-index: -2;
+}
+.header_nav {
+  position: fixed;
+  right: -80rem;
+  height: 100vh;
+  top: 0.1px;
+  width: 70%;
+  transition: 0.5s ease;
+  font-family: LivvicMedium;
+  font-size: 17px;
+  background-color: white;
+  margin: 0 auto;
+}
+@media screen and (min-width: 760px) {
+  .header_nav {
+    background-color: transparent;
+    font-family: LivvicLight;
+    align-items: center;
+    height: 9vh;
+    position: unset;
+    width: 100%;
+  }
+}
+.header_nav_links {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.header_nav_links img {
+  margin-bottom: 2rem;
+}
+.header_nav_links i {
+  display: none;
+}
+@media screen and (min-width: 760px) {
+  .header_nav_links {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    font-weight: 600;
+    position: unset;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .header_nav_links .looblogo {
+    display: none;
+  }
+  .header_nav_links i {
+    display: block;
+  }
+}
+.header_nav_links a {
+  margin: 2rem;
+}
+@media screen and (min-width: 760px) {
+  .header_nav_links a {
+    margin: 2rem 2rem 0rem 0rem;
+  }
+}
+.header_nav_links a:nth-child(3):after {
+  content: "+";
+  position: absolute;
+  left: 200px;
+}
+@media screen and (min-width: 760px) {
+  .header_nav_links a:nth-child(3):after {
+    content: "";
+  }
+}
+.header_nav_links:nth-child(3):hover_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_nav_links_page {
+  display: none;
+}
+.header_nav.open {
+  right: 0rem;
+  transition: 0.5s ease;
+}
+.header_nav.open .body {
+  filter: blur(5px);
+}
+.header .burgelo {
+  position: fixed;
+  left: 44rem;
+}
+.header .burgelo span {
+  width: 2.3rem;
+  height: 0.4rem;
+  background-color: #0A0A0A;
+  display: block;
+  border-radius: 5rem;
+  transition: 0.4s ease;
+}
+.header .burgelo span:nth-child(2) {
+  margin: 0.2rem 0;
+}
+@media screen and (min-width: 760px) {
+  .header .burgelo span {
+    display: none;
+  }
+}
+.header .burgelo .span {
+  width: 1rem;
+  height: 0.1rem;
+  background-color: #0A0A0A;
+  display: block;
+  border-radius: 5rem;
+  transition: 0.5s ease;
+}
+.header .burgelo .span:nth-child(2) {
+  margin: 0.5rem 0;
+}
+.header .burgelo.open span:first-child {
+  transform: translate(0, 11px) rotate(225deg);
+  transition: 0.5s ease;
+}
+.header .burgelo.open span:nth-child(2) {
+  opacity: 0;
+}
+.header .burgelo.open span:last-child {
+  transform: translate(0, -1px) rotate(-225deg);
+  transition: 0.5s ease;
+}/*# sourceMappingURL=main.css.map */

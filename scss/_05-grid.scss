@@ -1,0 +1,13 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+.container {
+    max-width: 120rem;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+  

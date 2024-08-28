@@ -1,0 +1,191 @@
+.footer{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/slider3.jpg');
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+        @include centerAll;   
+        @include mediaQuery($break-md){
+            flex-direction: row;
+
+            
+        }  
+    }
+    
+    .column{
+        margin: 5rem 1rem 1rem 1.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        font-family: LivvicLight;
+        font-weight: 500;
+        @include mediaQuery($break-md){
+            flex-wrap: wrap;
+            width: 50%;
+            &:nth-of-type(2){
+                text-align: left;
+            }
+            &:nth-of-type(3){
+                .contact_icons{
+                    margin-bottom: 5rem 0rem;
+                    .contact_iconings{
+
+                        display: flex;
+                        flex-direction: row;
+                        
+                        i{
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .footer_text{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            color: $clr-light;
+            
+        }
+        .footer_text2{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            color: $clr-light;
+            text-align: left;
+        }
+        h4{
+            color: $clr-light;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-family: LivvicMedium;
+            letter-spacing: 1px;
+        }
+        .socialistic{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+            i{
+                
+                font-size: 2rem;
+                color: $clr-light;
+                background-color: $clr-primary-dark;
+                
+                &:nth-of-type(1){
+                    padding: 1rem 1.5rem;
+                    
+                }
+                &:nth-of-type(2){
+                    padding: 1rem 1.1rem;
+                    margin-left: 1rem;
+                }
+                &:nth-of-type(3){
+                    padding: 1rem 1.2rem ;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+    .branding{
+        font-family: LivvicBold;
+        font-size: 40px;
+        color: $clr-primary;
+        transition: 0.3s ease;
+        align-items: center;
+        p{
+            align-items: center;
+        }
+        .colorchanger{
+            transition: 0.3s ease;
+            color: $clr-light;
+        }
+    }
+    .contact_icons{
+        .contact_iconings{
+            margin-bottom: 1rem;
+        }
+        i{
+            color: $clr-light;
+            font-size: 2rem;
+        }
+        p{
+            color: white;
+            font-size: 1.9rem;
+        }
+    }
+    a{
+        color: white;
+        font-size: 1.9rem;
+        font-family: LivvicExtralight;
+        font-weight: 600;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    input{
+        border: 1px solid $clr-light;
+        align-items: baseline;
+        padding: 1rem 2rem;
+        background: transparent;
+        width: 100%;
+        font-family: LivvicLight;
+        font-size: 1.9rem;
+        color: white;
+    }
+    .submit{
+        display: flex;
+        justify-content: baseline;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: baseline;
+        font-family: LivvicBold;
+        margin-bottom: 5rem;
+        input{
+            border-color: $clr-primary;
+            margin-top: 4rem;
+            width: auto;
+            border-radius: 5px;
+            font-size: 1.7rem;
+            
+            &:hover{
+                border-color: $clr-light;
+                background-color: $clr-light;
+                color: $clr-primary;
+            }
+        }
+    }
+
+    .footer_footer{
+        border-top: 1px solid $clr-gray;
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: LivvicLight;
+        color: white;
+        p{
+            margin-top: 2rem;
+            
+            
+        }
+        .home_contact{
+            display: flex;
+            flex-direction: row;
+            a{
+                margin-right: 3rem;
+                font-size: 1.5rem;
+                font-family: LivvicLight;
+                font-weight: 500;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
