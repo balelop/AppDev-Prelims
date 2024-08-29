@@ -58,7 +58,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 
 .container {
@@ -314,7 +313,6 @@ body {
 }
 
 .header {
-  position: absolute;
   width: 100%;
   background: #ffffff;
   z-index: 999;
