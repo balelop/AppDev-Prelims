@@ -58,7 +58,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 
 .container {
@@ -511,4 +510,86 @@ body {
 .header .burgelo.open span:last-child {
   transform: translate(0, -1px) rotate(-225deg);
   transition: 0.5s ease;
+}
+
+.team_banner {
+  background-image: url("../img/sld.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.team_banner .container {
+  background-color: rgba(0, 0, 0, 0.5176470588);
+  max-width: 100vw !important;
+}
+.team_banner_wrapper .team_text {
+  padding: 2rem 0;
+  color: #ffffff;
+  text-align: center;
+  z-index: 10;
+  display: block;
+  place-content: center;
+}
+.team_banner_wrapper .team_text h3 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.team_member .team_text {
+  font-size: 2rem;
+  text-align: center;
+}
+.team_member .team_text h2 {
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+.team_member .team_cards_container {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: row;
+  gap: 3rem;
+}
+.team_member .team_cards_container .team_card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0;
+  box-shadow: 2px 4px 7px -2px gray;
+}
+.team_member .team_cards_container .team_card img {
+  width: 100%;
+  margin: 0;
+}
+.team_member .team_cards_container .team_card .card_details {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -6px;
+}
+.team_member .team_cards_container .team_card .card_details .socials {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.team_member .team_cards_container .team_card .card_details .socials .fa-brands {
+  padding: 1rem;
+  background-color: #14B1BB;
+  display: inline-block;
+  color: #ffffff;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 4rem;
+  place-content: center;
+  text-align: center;
+}
+.team_member .team_cards_container .team_card .card_details .text_team {
+  text-align: left;
+}
+.team_member .team_cards_container .team_card .card_details .text_team h3 {
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+.team_member .team_cards_container .team_card .card_details .text_team h4 {
+  font-weight: 300;
+  font-size: 1.9rem;
 }/*# sourceMappingURL=main.css.map */
