@@ -520,7 +520,8 @@ body {
 }
 .team_banner .container {
   background-color: rgba(0, 0, 0, 0.5176470588);
-  max-width: 100vw !important;
+  max-width: 100%;
+  margin-top: 3.8rem;
 }
 .team_banner_wrapper .team_text {
   padding: 2rem 0;
@@ -564,7 +565,7 @@ body {
   gap: 1.5rem;
   flex-direction: row;
   align-items: center;
-  margin-top: -6px;
+  margin-top: 0px;
 }
 .team_member .team_cards_container .team_card .card_details .socials {
   background-color: #ffffff;
