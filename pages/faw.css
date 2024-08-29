@@ -1,1 +1,46 @@
-/*# sourceMappingURL=faw.css.map */
+.golez {
+  display: flex;
+  justify-content: center;
+  margin: 20rem;
+}
+.golez_content .picture {
+  display: flex;
+  justify-content: center;
+}
+.golez_content .picture img {
+  width: 40rem;
+}
+.golez_content .dropdown .faq {
+  margin: 0;
+}
+.golez_content .dropdown .faq .button {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 43rem;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 3px 3px 3px rgba(182, 182, 182, 0.397);
+}
+.golez_content .dropdown .faq .pannel {
+  padding: 0.2rem 2.5rem 2rem;
+}
+.golez_content:nth-child(even) .picture {
+  position: relative;
+  top: 60rem;
+}
+.golez_content:nth-child(even) .dropdown {
+  position: relative;
+  top: -30rem;
+}
+.golez_content:nth-child(odd) .dropdown {
+  position: relative;
+  top: 3rem;
+}/*# sourceMappingURL=faw.css.map */
