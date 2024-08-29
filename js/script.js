@@ -11,7 +11,7 @@ burgirBtn.addEventListener("click", () =>{
 const header = document.querySelector(".header");
 window.addEventListener("scroll", () => {
   console.log(scrollY);
-  if (scrollY >= 100) {
+  if (scrollY >= 52) {
   header.classList.add("blue");
 } else {
   header.classList.remove("blue");
