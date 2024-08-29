@@ -517,6 +517,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 5.3rem;
 }
 .team_banner .container {
   background-color: rgba(0, 0, 0, 0.5176470588);
