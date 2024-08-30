@@ -1,0 +1,66 @@
+.golez {
+    display: flex;
+    justify-content: center;
+    margin: 5rem; 
+
+    &_content {
+        
+
+        .picture {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 40rem;
+            }
+        }
+
+        .dropdown {
+            .faq {
+                margin: 0;
+
+                .button {
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    width: 43rem;
+                    padding: 2rem 2.5rem;
+                    border: none;
+                    outline: none;
+                    transition: 0.4s ease;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-weight: bold;
+                    box-shadow: 3px 3px 3px rgba(182, 182, 182, 0.397);
+                }
+
+                .pannel {
+                    padding: 0.2rem 2.5rem 2rem;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            .picture {
+                position: absolute;
+                top: 200rem;
+                right: 0;
+                display: none;
+            }
+
+            .dropdown {
+                position: relative;
+                top: 10rem;
+            }
+        }
+
+        &:nth-child(odd) {
+            .dropdown {
+                position: relative;
+                top: 3rem;
+            }
+        }
+    }
+}   
