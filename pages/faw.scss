@@ -1,13 +1,11 @@
-body {
-    // background-color: $clr-gray;
-}
-
 .golez {
     display: flex;
     justify-content: center;
-    margin: 20rem; 
+    margin: 5rem; 
 
     &_content {
+        
+
         .picture {
             display: flex;
             justify-content: center;
@@ -46,13 +44,15 @@ body {
 
         &:nth-child(even) {
             .picture {
-                position: relative;
-                top: 60rem;
+                position: absolute;
+                top: 200rem;
+                right: 0;
+                display: none;
             }
 
             .dropdown {
                 position: relative;
-                top: -30rem;
+                top: 10rem;
             }
         }
 

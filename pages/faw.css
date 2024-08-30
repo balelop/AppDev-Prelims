@@ -1,7 +1,7 @@
 .golez {
   display: flex;
   justify-content: center;
-  margin: 20rem;
+  margin: 5rem;
 }
 .golez_content .picture {
   display: flex;
@@ -33,12 +33,14 @@
   padding: 0.2rem 2.5rem 2rem;
 }
 .golez_content:nth-child(even) .picture {
-  position: relative;
-  top: 60rem;
+  position: absolute;
+  top: 200rem;
+  right: 0;
+  display: none;
 }
 .golez_content:nth-child(even) .dropdown {
   position: relative;
-  top: -30rem;
+  top: 10rem;
 }
 .golez_content:nth-child(odd) .dropdown {
   position: relative;
