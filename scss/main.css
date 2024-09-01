@@ -527,11 +527,11 @@ body {
   margin: 0;
 }
 .golez_content .dropdown .faq .button {
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #0A0A0A;
   cursor: pointer;
   font-size: 1.2rem;
-  width: 43rem;
+  width: 40rem;
   padding: 2rem 2.5rem;
   border: none;
   outline: none;
@@ -540,10 +540,17 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  box-shadow: 3px 3px 3px rgba(182, 182, 182, 0.397);
+  box-shadow: 3px 3px 3px 3px rgba(170, 169, 169, 0.13);
+}
+.golez_content .dropdown .faq .button.active {
+  background-color: #14B1BB;
+  color: white;
 }
 .golez_content .dropdown .faq .pannel {
-  padding: 0.2rem 2.5rem 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 2.5rem 2rem;
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px rgba(170, 169, 169, 0.13);
 }
 .golez_content:nth-child(even) .picture {
   position: absolute;
