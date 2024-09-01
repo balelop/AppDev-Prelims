@@ -540,9 +540,13 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  box-shadow: 3px 3px 3px 3px rgba(170, 169, 169, 0.13);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .golez_content .dropdown .faq .button.active {
+  background-color: #14B1BB;
+  color: white;
+}
+.golez_content .dropdown .faq .button:hover {
   background-color: #14B1BB;
   color: white;
 }
@@ -550,7 +554,7 @@ body {
   margin-bottom: 2rem;
   padding: 2rem 2.5rem 2rem;
   background-color: white;
-  box-shadow: 3px 3px 3px 3px rgba(170, 169, 169, 0.13);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .golez_content:nth-child(even) .picture {
   position: absolute;
