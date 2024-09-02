@@ -17,3 +17,21 @@ window.addEventListener("scroll", () => {
   header.classList.remove("blue");
 }
 })
+
+// FAQ
+$(document).ready(function(){
+  $(".button").click(function(){
+
+      if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(this).next().removeClass("active");
+      } else {
+          $(".button").each(function(){
+              $(this).removeClass("active");
+              $(this).next().removeClass("active");
+          });
+          $(this).addClass("active");
+          $(this).next().addClass("active");
+      }
+  });
+});

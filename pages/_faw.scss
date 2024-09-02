@@ -1,77 +1,88 @@
-.golez {
-    display: flex;
-    justify-content: center;
-    margin: 5rem; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    &_content {
+.golez {
+    max-width: 450px;
+    margin: 50px auto;
+
+    &_container_content {
+        &:first-child {
+            margin-bottom: 20rem;
+        }
+
+        &:last-child {
+            img {
+                margin-top: 20px;
+            }
+        }
+
         .picture {
             display: flex;
             justify-content: center;
+            margin-bottom: 5rem;
 
             img {
-                width: 40rem;
+                width: 450px;
             }
         }
 
-        .dropdown {
-            .faq {
-                margin: 0;
-
-                .button {
-                    background-color: $clr-light;
-                    color: $clr-dark;
-                    cursor: pointer;
-                    font-size: 1.2rem;
-                    width: 40rem;
-                    padding: 2rem 2.5rem;
-                    border: none;
-                    outline: none;
-                    transition: 0.4s ease;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    font-weight: bold;
-                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                }
-
-                .button.active {
-                    background-color: $clr-primary;
-                    color: white;
-                }
-
-                .button:hover {
-                    background-color: $clr-primary;
-                    color: white;
-                }
-
-                .pannel {
-                    margin-bottom: 2rem;
-                    padding: 2rem 2.5rem 2rem;
-                    background-color: white;
-                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .content {
+            margin-bottom: 40px;
+    
+            .button {
+                background: $clr-light;
+                padding: 20px 29px;
+                color: black;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                position: relative;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                margin-bottom: -2rem;
+    
+                i {
+                  font-size: 10px;
+                  position: absolute;
+                  top: 40%;
+                  right: 20px;  
                 }
             }
-        }
-
-        &:nth-child(even) {
-            .picture {
-                position: absolute;
-                top: 200rem;
-                right: 0;
+    
+            .button:hover {
+                background: $clr-primary;
+                color: $clr-light;
+            }
+    
+            .button.active {
+                background: $clr-primary;
+                color: $clr-light;
+    
+                i {
+                    transform: rotate(180deg); 
+                }
+            }
+    
+            .button.active + .pannel {
+                display: block;
+                transition: 0.4s ease;
+            }
+    
+            .pannel {
+                background: $clr-light;
                 display: none;
-            }
-
-            .dropdown {
-                position: relative;
-                top: 10rem;
-            }
-        }
-
-        &:nth-child(odd) {
-            .dropdown {
-                position: relative;
-                top: 3rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                margin-bottom: -2rem;
+    
+                p {
+                    font-size: 19px;
+                    line-height: 30px;
+                    padding: 28px 25px 15px 15px;
+                    color: #454545;
+                }
             }
         }
     }
-}   
+}
