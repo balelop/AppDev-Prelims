@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
     <body>
         <div class="contact_summary">
@@ -75,11 +76,11 @@
     
         <section class="team_member">
             <div class="container">
-                <div class="team_text">
+                <div class="team_text team_card_intro">
                     <h2>Our Expert Member</h2>
                     <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <div class="team_cards_container">
+                <div class="team_cards_container">  
                     <div class="team_card">
                         <img src="../img/t1.jpg" alt="">
                         <div class="card_details">
@@ -128,7 +129,7 @@
                     </div>
                     <!-- 4th card -->
                     <div class="team_card">
-                        <img src="../img/t1.jpg" alt="">
+                        <img src="../img/t2.jpg" alt="">
                         <div class="card_details">
                             <div class="socials">
                                 <i class="fa-brands fa-facebook-f"></i>
@@ -136,34 +137,77 @@
                                 <i class="fa-brands fa-instagram"></i>
                             </div>
                             <div class="text_team">
-                                <h3>Liton Sarkar</h3>
-                                <h4>Funder</h4>
+                                <h3>Maria Andaloro</h3>
+                                <h4>Support Manager</h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
     
         <section>
             <div class="team_info">
                 <div class="container">
-                    <div class="team_cardsbg_container">
-                        <div class="team_cardsbg_details">
-                            <div class="card_social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-x-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                            </div>
-                            <div class="team_textg">
-                                <h2>Our Expert Member</h2>
-                                <h3></h3>Rorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, nesciunt. Itaque quos ipsa nemo illum dolor, neque obcaecati delectus exercitationem laboriosam accusantium sit autem nulla praesentium quis. Beatae, voluptate ipsam.
-                            </div>
+                    <div class="team_textg  team_card_intro">
+                        <h2>Our Expert Member</h2>
+                        <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>                    
+                    <div class="card_container">
+                        <div class="team_cardsbg_container">
+                            <div class="team_cardsbg_details">
+                                <div class="text_team">
+                                    <h3>Amalia Edinson</h3>
+                                    <h4>Marketing Manager</h4>
+                                </div>
+                                <div class="card_social">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>       
+                        </div>
+                        <!-- 2ndslider -->
+                        <div class="team_cardsbg_container">
+                            <div class="team_cardsbg_details">
+                                <div class="text_team">
+                                    <h3>Marian Chris</h3>
+                                    <h4>Funder</h4>
+                                </div>
+                                <div class="card_social">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>       
+                        </div>
+                        <!-- 3rdslide -->
+                        <div class="team_cardsbg_container">
+                            <div class="team_cardsbg_details">
+                                <div class="text_team">
+                                    <h3>Maria Andaloro</h3>
+                                    <h4>Support Manager</h4>
+                                </div>
+                                <div class="card_social">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>       
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
         <div class="footer">
             <div class="container">
                 <div class="footer_wrapper">
@@ -242,13 +286,14 @@
         <script type="module">
                 // import {tns} from './src/tiny-slider.js';
               
-                var slider = tns({
+                var sliderniem = tns({
                   container: '.team_cards_container',
                   items: 1,
                   slideBy: '1',
                   autoplay: true,
                   nav: false,
                   controls: false,
+                  
         
                   responsive: {
                     760: {
