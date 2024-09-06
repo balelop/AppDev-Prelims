@@ -8,44 +8,110 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
-<body>
-    <section class="homeBanner">
+    <body style="height: 200vh;">
+        <div class="contact_summary">
+            <div class="address">
+                <i class="fa-solid fa-house"></i>
+                <p>56 Road Kurigram Street, 60 New York, UK</p>
+                <i class="fa-solid fa-phone"></i>
+                <p>+968 556 778 345</p>
+            </div>
+            <div class="socials">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-threads"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-xing"></i></a>
+            </div>
+        </div>
+        <div class="header">
+            <div class="kamote"></div>
+            
             <div class="container">
-                <div class="homeBanner__wrapper">
-                    <div class="homeBanner__item">
-                        <img src="./img/slider-1.jpg" alt="" id="firstban">
-                        <div class="homeBanner__item--text">
-                            <h2>Generate Engaging Content Through.</h2>
-                            <p>Porem ipsum dolor sit amet, consectetur dipisicing elit, sed do eiusmod tempoi cidi ut labore et dolore magna aliqua.</p>
-                            <a href="">Contact Now</a> 
+                
+                <div class="header_wrapper">
+                    <div class="branding">
+                        <p>K<span class="colorchanger">urig</span>ram</p>
+                    </div>
+                    <div class="header_nav">
+                        <div class="header_nav_links">
+                            <img class="looblogo" src="../img/logo.png" alt="">
+                            <a href="">Home</i></a>
+                            <a href="">About</a>
+                            <a href="">Page</a>
+                            <div class="header_nav_links_page">
+                                <a href="">Why Choose Us</a>
+                                <a href="">Team</a>
+                                <a href="">FAQ</a>                            
+                            </div>
+                            
+                            <a href="">Gallery</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="" class="btn bg--primary">Free Estimate</a>                     
                         </div>
                     </div>
-                    <div class="homeBanner__item">
-                        <img src="./img/slider3.jpg" alt="" id="secban">
-                        <div class="homeBanner__item--text">
-                            <h2>Make Your Business Perfect Wordpress Site.</h2>
-                            <p>Porem ipsum dolor sit amet, consectetur dipisicing elit, sed do eiusmod tempoi cidi ut labore et dolore magna aliqua.</p>
-                            <a href="">Contact Now</a> 
-                        </div>
+                    <div class="burgelo">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
             </div>
-    </section>
+            </div>
+        </div>
+        <section class="homeBanner">
+                <div class="homeBanner__wrapper">
+
+                    <div class="homeBanner__slider">
+                        <div class="homeBanner__item firstban">
+                            <img src="../img/slider-1.jpg" alt="" id="firstban">
+                            <div class="homeBanner__item--text">
+                                <h2>Generate Engaging <br> Content Through.</h2>
+                                <p>Porem ipsum dolor sit amet, consectetur dipisicing elit, sed do eiusmod <br> tempoi cidi ut labore et dolore magna aliqua.</p>
+                                <div class="">
+                                    <a href="" class="btnprime">Contact Now</a> 
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-chevron-right next"></i>
+                        </div>
+                        <div class="homeBanner__item secban">
+                            <img src="../img/slider3.jpg" alt="" id="secban">
+                            <div class="homeBanner__item--text">
+                                <h2>Make Your Business <br> Perfect Wordpress Site.</h2>
+                                <p>Porem ipsum dolor sit amet, consectetur dipisicing elit, sed do eiusmod <br> tempoi cidi ut labore et dolore magna aliqua.</p>
+                                <div class="">
+                                    <a href="" class="btnprime">Contact Now</a> 
+                                    <a href="" class="btnblack">More Service</a>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-chevron-left prev"></i>
+                        </div>
+                    </div>
+                    
+                        
+                        
+                    
+                    
+                </div>
+        </section>
 
     <section class="feature">
         <div class="container">
             <div class="feature__wrapper">
                 <h2>Our Feature</h2>
-                <p class="title-text">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="title-text">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua. </p>
                 <div class="feature__cards">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <div class="flip-card-text">
-                                    <i class="fa-solid fa-desktop"></i>
+                                    <i class="fa-solid fa-desktop main"></i>
                                     <h3>Awesome Work Place</h3>
                                     <p>Lorem ipsum dolor sit amet, ca adipisicing elit, sed do eiusmod tempor incididunt utn labore et dolore magna. </p>
                                     <a href="">Read More</a>
@@ -53,7 +119,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <div class="flip-card-text">
-                                    <i class="fa-solid fa-desktop"></i>
+                                    <i class="fa-solid fa-desktop main"></i>
                                     <h3>Awesome Work Place</h3>
                                     <p>Lorem ipsum dolor sit amet, ca adipisicing elit, sed do eiusmod tempor incididunt utn labore et dolore magna. </p>
                                     <a href="">Read More</a>
@@ -65,7 +131,7 @@
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <div class="flip-card-text">
-                                    <i class="fa-solid fa-desktop"></i>
+                                    <i class="fa-solid fa-chart-simple"></i>
                                     <h3>Unlimited Facility</h3>
                                     <p>Lorem ipsum dolor sit amet, ca adipisicing elit, sed do eiusmod tempor incididunt utn labore et dolore magna. </p>
                                     <a href="">Read More</a>
@@ -73,7 +139,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <div class="flip-card-text">
-                                    <i class="fa-solid fa-desktop"></i>
+                                    <i class="fa-solid fa-chart-simple"></i>
                                     <h3>Unlimited Facility</h3>
                                     <p>Lorem ipsum dolor sit amet, ca adipisicing elit, sed do eiusmod tempor incididunt utn labore et dolore magna. </p>
                                     <a href="">Read More</a>
@@ -85,7 +151,7 @@
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <div class="flip-card-text">
-                                    <i class="fa-solid fa-desktop"></i>
+                                    <i class="fa-solid fa-tablet-screen-button"></i>
                                     <h3>Responsive Design</h3>
                                     <p>Lorem ipsum dolor sit amet, ca adipisicing elit, sed do eiusmod tempor incididunt utn labore et dolore magna. </p>
                                     <a href="">Read More</a>
@@ -93,7 +159,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <div class="flip-card-text">
-                                    <i class="fa-solid fa-desktop"></i>
+                                    <i class="fa-solid fa-tablet-screen-button"></i>
                                     <h3>Responsive Design</h3>
                                     <p>Lorem ipsum dolor sit amet, ca adipisicing elit, sed do eiusmod tempor incididunt utn labore et dolore magna. </p>
                                     <a href="">Read More</a>
@@ -109,38 +175,45 @@
         <div class="container">
             <div class="different__wrapper">
                 <div class="meet__slider">
-                    <img src="./img/slider-meet-1.jpg" alt="">
-                    <img src="./img/slider-meet-2.jpg" alt="">
+                    <img src="../img/slider-meet-1.jpg" alt="">
+                    <img src="../img/slider-meet-2.jpg" alt="">
+                </div>
+                <div class="different__why">
+                    <h2>Why We Are Different?</h2>
+                    <div class="why__wrap">
+                        <div class="different__why-item">
+                            <i class="fa-solid fa-house"></i>
+                            <div class="why-item--text">
+                                <h3>Our Company HihomeFaq</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            </div>
+                        </div>
+                        <div class="different__why-item">
+                            <i class="fa-solid fa-chart-column"></i>
+                            <div class="why-item--text">
+                                <h3>Our Success Mission</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            </div>
+                        </div>
+                        <div class="different__why-item">
+                            <i class="fa-solid fa-people-group"></i>
+                            <div class="why-item--text">
+                                <h3>Our Future Plan</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-label">
+                          Support <span id="progress-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                          <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="different__why">
-                <h2>Why We Are Different?</h2>
-                <div class="why__wrap">
-                    <div class="different__why-item">
-                        <i class="fa-solid fa-house"></i>
-                        <h3>Our Company History</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
-                    </div>
-                    <div class="different__why-item">
-                        <i class="fa-solid fa-house"></i>
-                        <h3>Our Success Mission</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
-                    </div>
-                    <div class="different__why-item">
-                        <i class="fa-solid fa-house"></i>
-                        <h3>Our Future Plan</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
-                    </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-label">
-                      Support <span id="progress-percentage">95%</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="progress-fill" id="progress-fill"></div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
@@ -149,55 +222,54 @@
             <div class="service__wrapper">
                 <div class="service__title">
                     <h2>Our Service</h2>
-                    <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.</p>
                 </div>
                     <div class="service__cards">
                         <div class="service__card">
                             <div class="card__wrap">
-                                <i class="fa-solid fa-desktop"></i>
+                                <i class="fa-solid fa-desktop main"></i>
                                 <h3>CLEAN DESIGN</h3>
                                 <p>Lorem ipsum dolor sit amet, elit, a sed diam nonummy nibh tincidunt consectetuer adipiscing .</p>
-                                <a href="">Read More</a>
+                                <a href="">Read More<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="service__card">
                             <div class="card__wrap">
-                                <i class="fa-solid fa-desktop"></i>
-                                <h3>CLEAN DESIGN</h3>
+                                <i class="fa-solid fa-video main"></i>                                <h3>PHOTOGRAPHY</h3>
                                 <p>Lorem ipsum dolor sit amet, elit, a sed diam nonummy nibh tincidunt consectetuer adipiscing .</p>
-                                <a href="">Read More</a>
+                                <a href="">Read More<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="service__card">
                             <div class="card__wrap">
-                                <i class="fa-solid fa-desktop"></i>
-                                <h3>CLEAN DESIGN</h3>
+                                <i class="fa-solid fa-people-group main"></i>
+                                <h3>CREATIVE IDEA</h3>
                                 <p>Lorem ipsum dolor sit amet, elit, a sed diam nonummy nibh tincidunt consectetuer adipiscing .</p>
-                                <a href="">Read More</a>
+                                <a href="">Read More<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="service__card">
                             <div class="card__wrap">
-                                <i class="fa-solid fa-desktop"></i>
-                                <h3>CLEAN DESIGN</h3>
+                                <i class="fa-solid fa-network-wired main"></i>
+                                <h3>ONLINE MARKETING</h3>
                                 <p>Lorem ipsum dolor sit amet, elit, a sed diam nonummy nibh tincidunt consectetuer adipiscing .</p>
-                                <a href="">Read More</a>
+                                <a href="">Read More<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="service__card">
                             <div class="card__wrap">
-                                <i class="fa-solid fa-desktop"></i>
-                                <h3>CLEAN DESIGN</h3>
+                                <i class="fa-regular fa-user main"></i>
+                                <h3>COMMUNICATION</h3>
                                 <p>Lorem ipsum dolor sit amet, elit, a sed diam nonummy nibh tincidunt consectetuer adipiscing .</p>
-                                <a href="">Read More</a>
+                                <a href="">Read More<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="service__card">
                             <div class="card__wrap">
-                                <i class="fa-solid fa-desktop"></i>
-                                <h3>CLEAN DESIGN</h3>
+                                <i class="fa-solid fa-headphones main"></i>
+                                <h3>UNLIMITED SUPPORT</h3>
                                 <p>Lorem ipsum dolor sit amet, elit, a sed diam nonummy nibh tincidunt consectetuer adipiscing .</p>
-                                <a href="">Read More</a>
+                                <a href="">Read More<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +283,7 @@
           <div class="portfolio_wrapper">
             <div class="portfolio_title">
                 <h2>Our Portfolio</h2>
-                <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.</p>
             </div>
             <div class="portfolio_tabs">
               <ul>
@@ -222,54 +294,559 @@
                 <li id="tab-5" class="tab_nav_link"><span>WordPress</span></li>
               </ul>
             </div>
-            <div class="portfolio_content">
-                <div id="tab-1-content" class="portfolio_content_item active">
-
-                    <div class="portfolio_item">
-                        <img src="./img/calculegit.jpg" alt="">
-                      </div>
-                    <div class="portfolio_item">
-                        <img src="./img/candle.jpg" alt="">
-                      </div>
-                    <div class="portfolio_item">
-                        <img src="./img/camera.jpg" alt="">
-                      </div>
-                    <div class="portfolio_item">
-                        <img src="./img/ilaw.jpg" alt="">
-                      </div>
-    
-                </div>
-              <div id="tab-2-content" class="portfolio_content_item ">
+                
+        </div>
+        </div>
+        <div class="portfolio_content">
+            <div id="tab-1-content" class="portfolio_content_item active">
 
                 <div class="portfolio_item">
-                    <img src="./img/calculegit.jpg" alt="">
-                  </div>
-
-              </div>
-              <div id="tab-3-content" class="portfolio_content_item ">
-
+                    <img src="../img/newimgalcos/p1.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
                 <div class="portfolio_item">
-                  <img src="./img/candle.jpg" alt="">
+                    <img src="../img/newimgalcos/p2.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p3.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p4.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p5.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p6.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p7.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p8.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
                 </div>
 
-              </div>
-              <div id="tab-4-content" class="portfolio_content_item ">
-                <div class="portfolio_item">
-                  <img src="./img/ilaw.jpg" alt="">
-                </div>
-              </div>
-              <div id="tab-5-content" class="portfolio_content_item ">
+            </div>
+        <div id="tab-2-content" class="portfolio_content_item ">
 
                 <div class="portfolio_item">
-                  <img src="./img/camera.jpg" alt="">
+                    <img src="../img/newimgalcos/p1.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p3.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p5.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="../img/newimgalcos/p8.jpg" alt="">
+                    <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
                 </div>
 
-              </div>
+        </div>
+        <div id="tab-3-content" class="portfolio_content_item ">
+
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p4.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+                
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p6.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p7.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p8.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+
+        </div>
+        <div id="tab-4-content" class="portfolio_content_item ">
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p1.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p2.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p3.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p8.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+        </div>
+        <div id="tab-5-content" class="portfolio_content_item ">
+
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p2.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p5.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p6.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+            <div class="portfolio_item">
+                <img src="../img/newimgalcos/p7.jpg" alt="">
+                <div class="mask">
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h2>Demo Media Tile 1</h2>
+                        <p>Branding, Web Design</p>
+                    </div>
+            </div>
+
+        </div>
         </div>
       </section>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="./script.js"></script>
-</body>
+
+    <section class="member">
+        <div class="container">
+            <div class="member__wrapper">
+                <div class="member_title">
+                    <h2>Our Expert Member</h2>
+                    <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.</p>
+                </div>
+                <div class="member__slider">
+                    <div class="member__slider--item">
+                        <div class="member__slider--item_content">
+                            <div class="imgWrap">
+                                <img src="../img/newimgalcos/t1.jpg" alt="">
+                                <div class="socials">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                            <h3>Amalia Edinson</h3>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                    <div class="member__slider--item">
+                        <div class="member__slider--item_content">
+                            <div class="imgWrap">
+                                <img src="../img/newimgalcos/t1.jpg" alt="">
+                                <div class="socials">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                            <h3>Amalia Edinson</h3>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                    <div class="member__slider--item">
+                        <div class="member__slider--item_content">
+                            <div class="imgWrap">
+                                <img src="../img/newimgalcos/t1.jpg" alt="">
+                                <div class="socials">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                            <h3>Amalia Edinson</h3>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                    <div class="member__slider--item">
+                        <div class="member__slider--item_content">
+                            <div class="imgWrap">
+                                <img src="../img/newimgalcos/t1.jpg" alt="">
+                                <div class="socials">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                            <h3>Amalia Edinson</h3>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                    <div class="member__slider--item">
+                        <div class="member__slider--item_content">
+                            <div class="imgWrap">
+                                <img src="../img/newimgalcos/t1.jpg" alt="">
+                                <div class="socials">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                            <h3>Amalia Edinson</h3>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                    <div class="member__slider--item">
+                        <div class="member__slider--item_content">
+                            <div class="imgWrap">
+                                <img src="../img/newimgalcos/t1.jpg" alt="">
+                                <div class="socials">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                            <h3>Amalia Edinson</h3>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats__wrapper">
+                <div class="stats__wrapper--item">
+                    <div class="counter">
+                        <i class="fa-solid fa-user"></i>
+                        <h3>Happy Customers</h3>
+                        <h2><span class="countNum">130</span>+</h2>
+                    </div>
+                </div>
+                <div class="stats__wrapper--item">
+                    <div class="counter">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h3>Employer Solutions</h3>
+                        <h2><span class="countNum1">60</span>+</h2>
+                    </div>
+                </div>
+                <div class="stats__wrapper--item">
+                    <div class="counter">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h3>Online Support</h3>
+                        <h2><span class="countNum2">30</span>+</h2>
+                    </div>
+                </div>
+                <div class="stats__wrapper--item">
+                    <div class="counter">
+                        <i class="fa-solid fa-user"></i>
+                        <h3>Project Completed</h3>
+                        <h2><span class="countNum3">33</span>+</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="prices">
+        <div class="container">
+            <div class="prices__wrapper">
+                <div class="prices__title">
+                    <h2>Our Small Price</h2>
+                    <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.</p>
+                </div>
+                <div class="prices__cardWrap">
+                    <div class="prices__cardWrap--card">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <h3>Monthly Package</h3>
+                        <p>20% offer</p>
+                        <h2>$ <span>31.99</span> /M</h2>
+                        <ul>
+                            <li>30 days trial Features</li>
+                            <li>Synced to cloud database</li>
+                            <li>10 hours of support</li>
+                            <li>Social media integration</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="">Subscribe Now</a>
+                    </div>
+                    <div class="prices__cardWrap--card">
+                        <div class="tag">
+                            <i class="fa-solid fa-coins"></i>
+                            <p>Popular</p>
+                        </div>
+                        <h3>Yearly Package</h3>
+                        <p>40% offer</p>
+                        <h2>$ <span>61.99</span> /Y</h2>
+                        <ul>
+                            <li>30 days trial Features</li>
+                            <li>Synced to cloud database</li>
+                            <li>10 hours of support</li>
+                            <li>Social media integration</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="">Subscribe Now</a>
+                    </div>
+                    <div class="prices__cardWrap--card">
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <h3>Lifetime Package</h3>
+                        <p>50% offer</p>
+                        <h2>$ <span>99.99</span> /L</h2>
+                        <ul>
+                            <li>30 days trial Features</li>
+                            <li>Synced to cloud database</li>
+                            <li>10 hours of support</li>
+                            <li>Social media integration</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="">Subscribe Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="getIntro">
+        <div class="getIntro__wrapper">
+            <a id="play-video" class="video-play-button" href="javascript:void(0);">
+                <i class="fa-solid fa-play"></i>
+            </a>
+            <h2>Get Introduction</h2>
+        </div>
+    </section>
+
+    <section class="homeFaq">
+        <div class="container">
+            <div class="homeFaq__wrapper">
+                <div class="homeFaq__title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.</p>
+                </div>
+                <div class="homeFaq__content">
+                    <img src="../img/slider-meet-2.jpg" alt="">
+                    <div class="homeFaq__dropdown">
+                        <div class="homeFaq__item">
+                          <h4>Do You Need A Business Service? <i class="fa-solid fa-chevron-up"></i></h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.
+                          </p>
+                        </div>
+                        <div class="homeFaq__item">
+                          <h4>Business Service A Scam? <i class="fa-solid fa-chevron-up"></i></h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.
+                          </p>
+                        </div>
+                        <div class="homeFaq__item">
+                          <h4>Most Out Of Your Business Service? <i class="fa-solid fa-chevron-up"></i></h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.
+                          </p>
+                        </div>
+                        <div class="homeFaq__item">
+                          <h4>The Sound Of Business Service? <i class="fa-solid fa-chevron-up"></i></h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.
+                          </p>
+                        </div>
+                        <div class="homeFaq__item">
+                          <h4>Business Service A Plan? <i class="fa-solid fa-chevron-up"></i></h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.
+                          </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="logos">
+        <div class="container">
+            <div class="logos__slider">
+                <img src="../img/b1.png" alt="">
+                <img src="../img/b2.png" alt="">
+                <img src="../img/b3.png" alt="">
+                <img src="../img/b4.png" alt="">
+                <img src="../img/b5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer_wrapper">
+                    <div class="column">
+                        <div class="branding">
+                            <p>K<span class="colorchanger">urig</span>ram</p>
+                        </div>
+                        <div class="footer_text"> 
+                            <p>There are many vari of pass of lorem ipsum availab majority have suffered in some form by injected humour or words.</p>
+
+                        </div>
+                        <div class="socialistic">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-solid fa-rss"></i>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h4>Links</h4>
+                        <div class="links">
+
+                            <a href="">About</a>
+                            <a href="">FAQ'S</a>
+                            <a href="">Team</a>
+                            <a href="">Counter</a>
+                            <a href="">Contact</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h4>Contact</h4>
+                        <div class="contact_icons">
+                            <div class="contact_iconings">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>56 Road Kurigram Street, 60 New York, UK</p>
+
+                            </div>
+                            <div class="contact_iconings">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+968 556 778 345</p>
+
+                            </div>
+                            <div class="contact_iconings">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p></i>demo@example.com</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h4>Newsletter</h4>
+                        <div class="footer_text2">
+                            <p>Subscribe to Our Newsletter for Daily News and Updates</p>
+
+                        </div>
+                        <input type="email" name="" placeholder="Email Address">
+                        <div class="submit">
+
+                            <input type="submit" value="Send Request" class="btn bg--primary">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_footer">
+                    <p>Copyright © kurigram all rights reserved.</p>
+                    <div class="home_contact">
+                        <a href="">Home</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <script src="https://kit.fontawesome.com/44142ae2b1.js" crossorigin="anonymous"></script>
+        <script src="../js/script.js"></script>
+    </body>
 </html>
+

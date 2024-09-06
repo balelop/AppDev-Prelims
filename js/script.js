@@ -18,23 +18,62 @@ window.addEventListener("scroll", () => {
 }
 })
 
+// alcos
+
 var slider = tns({
-  container: ".homeBanner__wrapper",
+  container: ".homeBanner__slider",
   items: 1,
   slideBy: "page",
   autoplay: true,
-  mouseDrag: true
+  mouseDrag: true,
+  // containerControls: "#homeBanner__controls",
+  prevButton: ".prev",
+  nextButton: ".next",
+  speed: 1500,
 });
 
 var slider = tns({
   container: ".meet__slider",
   items: 1,
-  speed: 800,
-  gutter: 100,
   slideBy: "page",
-  autoplay: true,
+  mouseDrag: true,
+  controls: false,
+  autoplay: true
+});
+
+var slider = tns({
+  container: ".member__slider",
+  items: 1,
+  slideBy: 1,
+  mouseDrag: true,
+  controls: false,
+  autoplay: false,
+  nav: true,
   navPosition: "bottom",
-  axis: "horizontal",
+  speed: 1000,
+  gutter: 20,
+  responsive: {
+    980: {
+      items: 3,
+      slideBy: 1
+    }
+  }
+});
+
+var slider = tns({
+  container: ".logos__slider",
+  items: 1,
+  slideBy: "page",
+  mouseDrag: true,
+  controls: false,
+  autoplay: true,
+  loop: true,
+  responsive: {
+    980: {
+      items: 5,
+      slideBy: 1
+    }
+  }
 });
 
 
@@ -63,3 +102,57 @@ function removeActiveContent() {
         port.classList.remove('active');
     });
 }
+
+//counter
+// function startCounter(endNumber) {
+//   let counterElement = document.getElementById('counter');
+//   let start = 0;
+//   let incrementTime = 1 / endNumber;  // Time between each increment
+
+//   function updateCounter() {
+//       counterElement.textContent = start;
+//       if (start < endNumber) {
+//           start++;
+//           setTimeout(updateCounter, incrementTime);
+//       }
+//   }
+  
+//   updateCounter();  // Start the counter
+// }
+
+// DROPDOWN
+const dropdowns = document.querySelectorAll('h4')
+dropdowns.forEach((drop) =>{
+    drop.addEventListener('click', ()=>{
+        drop.nextElementSibling.classList.toggle('open')
+        drop.querySelector('i').classList.toggle('open')
+        drop.classList.toggle('open')
+    })
+})
+
+
+// const dropdown = document.querySelectorAll(".tab_nav_link");
+// const portfolioContent = document.querySelectorAll(".portfolio_content_item");
+
+// dropdown.forEach((port) => {
+//     port.addEventListener("click", () => {
+//         removeActivePort();
+//         port.classList.add('active');
+
+//         const activeContent = document.querySelector(`#${port.id}-content`);
+//         removeActiveContent();
+//         activeContent.classList.add("active");
+//     })
+// });
+
+// function removeActivePort() {
+//     dropdown.forEach((port) => {
+//         port.classList.remove('active');
+//     });
+// }
+
+// function removeActiveContent() {
+//     portfolioContent.forEach((port) => {
+//         port.classList.remove('active');
+//     });
+// }
