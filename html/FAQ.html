@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../scss/main.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/44142ae2b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
@@ -38,18 +38,57 @@
                     <div class="header_nav">
                         <div class="header_nav_links">
                             <img class="looblogo" src="../img/logo.png" alt="">
-                            <a href="">Home</i></a>
-                            <a href="">About</a>
-                            <a href="">Page</a>
-                            <div class="header_nav_links_page">
-                                <a href="">Why Choose Us</a>
-                                <a href="">Team</a>
-                                <a href="">FAQ</a>                            
-                            </div>
+                            <a href="javascript:void(0)" onclick="toggleHome()">Home</i></a>
+                            <!-- HOME TOGGLE -->
+                             <div id="home_popup" class="home_popup">
+                                <ul>
+                                    <li><a href="">Home V1</a></li>
+                                    <li><a href="">Home V2</a></li>
+                                    <li><a href="">Home V3</a></li>
+                                    <li><a href="">Home V4</a></li>
+                                    <li><a href="">Home V5</a></li>
+                                    <li><a href="">Home V6</a></li>
+                                    <li><a href="">Home V7</a></li>
+                                    <li><a href="">Home Landing V1</a></li>
+                                    <li><a href="">Home Landing V2</a></li>
+                                    <li><a href="">Home Video</a></li>
+                                </ul>
+                             </div>
+
+                            <a href="javascript:void(0);">About</a>
+                            <a href="javascript:void(0);" onclick="togglePage()">Page</a>
+                            <!-- PAGE TOGGLE -->
+                            <div id="page_popup" class="page_popup">
+                                <ul>
+                                    <li><a href="">Why Choose Us</a></li>
+                                    <li><a href="">Team</a></li>
+                                    <li><a href="">FAQ'S</a></li>
+                                    <li><a href="">Counter</a></li>
+                                    <li><a href="">Pricing Plan</a></li>
+                                    <li><a href="">Our Clients</a></li>
+                                </ul>
+                             </div>
                             
-                            <a href="">Gallery</a>
-                            <a href="">Blog</a>
-                            <a href="">Contact</a>
+                            <a href="javascript:void(0);" onclick="toggleGallery()">Gallery</a>
+                            <!-- GALLERY TOGGLE -->
+                            <div id="gallery_popup" class="gallery_popup">
+                                <ul>
+                                    <li><a href="">Gallery 3Column</a></li>
+                                    <li><a href="">Gallery 4Column</a></li>
+                                </ul>
+                             </div>
+
+                            <a href="javascript:void(0);" onclick="toggleBlog()">Blog</a>
+                             <!-- BLOG TOGGLE -->
+                            <div id="blog_popup" class="blog_popup">
+                                <ul>
+                                    <li><a href="">Blog Grid</a></li>
+                                    <li><a href="">Blog Left Sidebar</a></li>
+                                    <li><a href="">Blog Right Sidebar</a></li>
+                                </ul>
+                             </div>
+
+                            <a href="javascript:void(0);">Contact</a>
                             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                             <a href="" class="btn bg--primary">Free Estimate</a>                     
                         </div>
@@ -71,73 +110,78 @@
                 <div class="golez_container_content">
                     <div class="picture">
                         <img src="../img/ab3.jpg" alt="">
+                        <img src="../img/ab1.jpg" alt="">
                     </div>
-                    <div class="content">
-                        <div class="button active">Do you need a Business Service?
-                            <i class="fa-solid fa-chevron-down"></i>
+                    <div class="all_content">
+                        <div class="content">
+                            <div class="button active">Do you need a Business Service?
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="pannel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
                         </div>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="content">
+                            <div class="button">Business Service A Scam?
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="pannel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <div class="button">Business Service A Scam?
-                            <i class="fa-solid fa-chevron-down"></i>
+                        <div class="content">
+                            <div class="button">Most Out Of Your Business Service
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="pannel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
                         </div>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="button">Most Out Of Your Business Service
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="button">The Sound Of Business Service?
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="content">
+                            <div class="button">The Sound Of Business Service?
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="pannel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- SECOND -->
                 <div class="golez_container_content">
-                    <div class="content">
-                        <div class="button active">Do you need a Business Service?
-                            <i class="fa-solid fa-chevron-down"></i>
+                    <div class="all_content">
+                        <div class="content">
+                            <div class="button active">Do you need a Business Service?
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="pannel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
                         </div>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="content">
+                            <div class="button">Business Service A Scam?
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="pannel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <div class="button">Business Service A Scam?
-                            <i class="fa-solid fa-chevron-down"></i>
+                        <div class="content">
+                            <div class="button">Most Out Of Your Business Service
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="pannel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
                         </div>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="button">Most Out Of Your Business Service
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="button">The Sound Of Business Service?
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="content">
+                            <div class="button">The Sound Of Business Service?
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="pannel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="picture">

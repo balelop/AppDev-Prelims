@@ -86,3 +86,45 @@
         }
     }
 }
+
+@include mediaQuery($break-md) {
+    .golez {
+        max-width: 100rem;
+
+        &_container_content {
+            display: flex;
+            justify-content: center;
+
+            &:first-child {
+                margin-bottom: 14rem;
+            }
+
+            &:last-child {
+                img {
+                    margin-top: 0;
+                }
+            }
+
+            .picture {
+                img {
+                    width: 550px;
+                }
+            }
+
+            .all_content {
+
+                &:first-child {
+                    margin-right: 2rem;
+                }
+
+                &:last-child {
+                    margin-left: 2rem;
+                }
+
+                .content {
+                    width: 550px;
+                }
+            }
+        }
+    }
+}

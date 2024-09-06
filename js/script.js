@@ -35,3 +35,35 @@ $(document).ready(function(){
       }
   });
 });
+
+
+// SLIDER
+// var slider = tns({
+//   container: "picture",
+//   items: 1,
+//   slideBy: "page",
+//   mouseDrag: true,
+//   controls: false,
+// });
+
+// POPUP
+function toggleHome() {
+  var popup = document.getElementById('home_popup');
+  popup.classList.toggle('active');
+}
+
+function togglePage() {
+  var popup = document.getElementById('page_popup');
+  popup.classList.toggle('active');
+}
+
+function toggleGallery() {
+  var popup = document.getElementById('gallery_popup');
+  popup.classList.toggle('active');
+}
+
+function toggleBlog() {
+  var popup = document.getElementById('blog_popup');
+  popup.classList.toggle('active');
+}
+

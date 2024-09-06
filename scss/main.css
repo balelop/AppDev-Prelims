@@ -511,6 +511,98 @@ body {
   transition: 0.5s ease;
 }
 
+.home_popup {
+  background-color: red;
+  position: fixed;
+  top: 40%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px 10px 20px;
+  line-height: 35px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home_popup ul li a:hover {
+  color: #14B1BB;
+}
+
+#home_popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  top: 37.68%;
+}
+
+.page_popup {
+  background-color: red;
+  position: fixed;
+  top: 33%;
+  left: 53.5%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px 10px 20px;
+  line-height: 35px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.page_popup ul li a:hover {
+  color: #14B1BB;
+}
+
+#page_popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  top: 30%;
+}
+
+.gallery_popup {
+  background-color: blue;
+  position: fixed;
+  top: 25%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px 10px 20px;
+  line-height: 35px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.gallery_popup ul li a:hover {
+  color: #14B1BB;
+}
+
+#gallery_popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  top: 22.5%;
+}
+
+.blog_popup {
+  background-color: pink;
+  position: fixed;
+  top: 27%;
+  left: 64.1%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px 10px 20px;
+  line-height: 35px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.blog_popup ul li a:hover {
+  color: #14B1BB;
+}
+
+#blog_popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  top: 24.34%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -581,4 +673,32 @@ body {
   line-height: 30px;
   padding: 28px 25px 15px 15px;
   color: #454545;
+}
+
+@media screen and (min-width: 760px) {
+  .golez {
+    max-width: 100rem;
+  }
+  .golez_container_content {
+    display: flex;
+    justify-content: center;
+  }
+  .golez_container_content:first-child {
+    margin-bottom: 14rem;
+  }
+  .golez_container_content:last-child img {
+    margin-top: 0;
+  }
+  .golez_container_content .picture img {
+    width: 550px;
+  }
+  .golez_container_content .all_content:first-child {
+    margin-right: 2rem;
+  }
+  .golez_container_content .all_content:last-child {
+    margin-left: 2rem;
+  }
+  .golez_container_content .all_content .content {
+    width: 550px;
+  }
 }/*# sourceMappingURL=main.css.map */
