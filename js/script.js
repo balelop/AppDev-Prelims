@@ -47,22 +47,33 @@ $(document).ready(function(){
 // });
 
 // POPUP
+function closeAllPopups() {
+  var allPopup = document.querySelectorAll('.popup');
+  allPopup.forEach(function(popup) {
+    popup.classList.remove('active');
+  });
+}
+
 function toggleHome() {
+  closeAllPopups();
   var popup = document.getElementById('home_popup');
   popup.classList.toggle('active');
 }
 
 function togglePage() {
+  closeAllPopups();
   var popup = document.getElementById('page_popup');
   popup.classList.toggle('active');
 }
 
 function toggleGallery() {
+  closeAllPopups();
   var popup = document.getElementById('gallery_popup');
   popup.classList.toggle('active');
 }
 
 function toggleBlog() {
+  closeAllPopups();
   var popup = document.getElementById('blog_popup');
   popup.classList.toggle('active');
 }

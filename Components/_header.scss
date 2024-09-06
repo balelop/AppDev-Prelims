@@ -257,7 +257,7 @@
 
 
 // POPUP
-.home_popup {
+#home_popup {
     background-color: red;
     position: fixed;
     top: 40%;
@@ -285,7 +285,7 @@
     top: 37.68%;
 }
 
-.page_popup {
+#page_popup {
     background-color: red;
     position: fixed;
     top: 33%;
@@ -313,7 +313,7 @@
     top: 30%;
 }
 
-.gallery_popup {
+#gallery_popup {
     background-color: blue;
     position: fixed;
     top: 25%;
@@ -341,7 +341,7 @@
     top: 22.5%;
 }
 
-.blog_popup {
+#blog_popup {
     background-color: pink;
     position: fixed;
     top: 27%;

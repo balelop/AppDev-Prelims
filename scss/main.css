@@ -511,7 +511,7 @@ body {
   transition: 0.5s ease;
 }
 
-.home_popup {
+#home_popup {
   background-color: red;
   position: fixed;
   top: 40%;
@@ -523,7 +523,7 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-.home_popup ul li a:hover {
+#home_popup ul li a:hover {
   color: #14B1BB;
 }
 
@@ -534,7 +534,7 @@ body {
   top: 37.68%;
 }
 
-.page_popup {
+#page_popup {
   background-color: red;
   position: fixed;
   top: 33%;
@@ -546,7 +546,7 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-.page_popup ul li a:hover {
+#page_popup ul li a:hover {
   color: #14B1BB;
 }
 
@@ -557,7 +557,7 @@ body {
   top: 30%;
 }
 
-.gallery_popup {
+#gallery_popup {
   background-color: blue;
   position: fixed;
   top: 25%;
@@ -569,7 +569,7 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-.gallery_popup ul li a:hover {
+#gallery_popup ul li a:hover {
   color: #14B1BB;
 }
 
@@ -580,7 +580,7 @@ body {
   top: 22.5%;
 }
 
-.blog_popup {
+#blog_popup {
   background-color: pink;
   position: fixed;
   top: 27%;
@@ -592,7 +592,7 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-.blog_popup ul li a:hover {
+#blog_popup ul li a:hover {
   color: #14B1BB;
 }
 
