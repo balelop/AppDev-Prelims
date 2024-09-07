@@ -53,7 +53,6 @@ function closeAllPopups() {
     popup.classList.remove('active');
   });
 }
-
 function toggleHome() {
   closeAllPopups();
   var popup = document.getElementById('home_popup');
