@@ -20,4 +20,27 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @mixin titleCss(){
+    &__title{
+      text-align: center;
+      h2{
+          padding-bottom: 3rem;
+          @include mediaQuery($break-lg){
+              font-size: 4rem;
+          }
+      }
+      p{
+          font-size: 1.9rem;
+          padding: 0 2rem 5rem 2rem;
+          color: $clr-hometext;
+          br{
+              display: none;
+              @include mediaQuery($break-lg){
+                  display: block;
+              }
+          }
+      }
+  }
+  }
   
