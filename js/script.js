@@ -47,7 +47,7 @@ var slider = tns({
   slideBy: 1,
   mouseDrag: true,
   controls: false,
-  autoplay: false,
+  autoplay: true,
   nav: true,
   navPosition: "bottom",
   speed: 1000,
@@ -63,7 +63,7 @@ var slider = tns({
 var slider = tns({
   container: ".logos__slider",
   items: 1,
-  slideBy: "page",
+  slideBy: 1,
   mouseDrag: true,
   controls: false,
   autoplay: true,
@@ -71,7 +71,6 @@ var slider = tns({
   responsive: {
     980: {
       items: 5,
-      slideBy: 1
     }
   }
 });
@@ -83,7 +82,7 @@ var slider = tns({
   mouseDrag: true,
   controls: false,
   autoplay: true,
-  axis: "vertical",
+  axis: "vertical"
 });
 
 var slider = tns({
@@ -130,22 +129,7 @@ function removeActiveContent() {
     });
 }
 
-//counter
-// function startCounter(endNumber) {
-//   let counterElement = document.getElementById('counter');
-//   let start = 0;
-//   let incrementTime = 1 / endNumber;  // Time between each increment
 
-//   function updateCounter() {
-//       counterElement.textContent = start;
-//       if (start < endNumber) {
-//           start++;
-//           setTimeout(updateCounter, incrementTime);
-//       }
-//   }
-  
-//   updateCounter();  // Start the counter
-// }
 
 // DROPDOWN
 const dropdowns = document.querySelectorAll('h4')
@@ -156,5 +140,30 @@ dropdowns.forEach((drop) =>{
         drop.classList.toggle('open')
     })
 })
+
+// counter
+function startCounter(...endNumbers) {
+  endNumbers.forEach((endNumber, index) => {
+    let counterElement = document.querySelector(`.countNum${index}`);
+    let start = 0;
+    let incrementTime = 2 / endNumber;
+
+    function updateCounter() {
+      counterElement.textContent = start;
+      if (start < endNumber) {
+        start++;
+        setTimeout(updateCounter, incrementTime);
+      }
+    }
+
+    updateCounter();  // Start the counter
+  });
+}
+window.addEventListener("scroll", ()=>{
+  if(scrollY > 4700 && scrollY < 4800){
+    startCounter(130,60,30,33)
+  }
+})
+
 
 
