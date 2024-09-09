@@ -615,6 +615,7 @@ body {
 }
 .golez_container_content:first-child {
   margin-bottom: 20rem;
+  margin-top: 4.7rem;
 }
 .golez_container_content:last-child img {
   margin-top: 20px;
@@ -625,7 +626,7 @@ body {
   margin-bottom: 5rem;
 }
 .golez_container_content .picture img {
-  width: 450px;
+  width: 439px;
 }
 .golez_container_content .content {
   margin-bottom: 40px;
@@ -700,5 +701,50 @@ body {
   }
   .golez_container_content .all_content .content {
     width: 550px;
+  }
+}
+.breadcrumb {
+  position: relative;
+}
+.breadcrumb img {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.breadcrumb .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 14rem;
+  background: black;
+  opacity: 50%;
+}
+.breadcrumb_text {
+  position: absolute;
+  top: 25%;
+  left: 26%;
+  text-align: center;
+  color: #ffffff;
+}
+.breadcrumb_text_title {
+  font-size: 25px;
+}
+.breadcrumb_text_inner {
+  font-size: 18px;
+}
+.breadcrumb_text a {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 760px) {
+  .breadcrumb_text {
+    position: absolute;
+    top: 25%;
+    left: 44%;
+    text-align: center;
+    color: #ffffff;
   }
 }/*# sourceMappingURL=main.css.map */
