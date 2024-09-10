@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kurigram Corporate Business Responsive WordPress Theme</title>
     <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
@@ -150,7 +150,7 @@
         <section>
             <div class="team_info">
                 <div class="container">
-                    <div class="team_textg  team_card_intro">
+                    <div class="team_text  team_card_intro">
                         <h2>Our Expert Member</h2>
                         <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>                    
@@ -284,15 +284,15 @@
         <script src="../js/script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
         <script type="module">
-                // import {tns} from './src/tiny-slider.js';
-              
                 var sliderniem = tns({
                   container: '.team_cards_container',
                   items: 1,
                   slideBy: '1',
                   autoplay: true,
                   nav: false,
-                  controls: false,
+                  controls: true,
+                  autoplayButtonOutput: false,
+                  controlsText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
                   
         
                   responsive: {
@@ -301,7 +301,7 @@
                     }
                   }
                 });
-                </script>
+            </script>
     </body>
 </html>
 
