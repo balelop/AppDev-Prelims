@@ -38,13 +38,14 @@ $(document).ready(function(){
 
 
 // SLIDER
-// var slider = tns({
-//   container: "picture",
-//   items: 1,
-//   slideBy: "page",
-//   mouseDrag: true,
-//   controls: false,
-// });
+var slider = tns({
+  container: ".picture",
+  items: 1,
+  slideBy: "page",
+  mouseDrag: true,
+  controls: false,
+  autoplay: true
+});
 
 // POPUP
 function closeAllPopups() {
