@@ -36,17 +36,6 @@ $(document).ready(function(){
   });
 });
 
-
-// SLIDER
-var slider = tns({
-  container: ".picture",
-  items: 1,
-  slideBy: "page",
-  mouseDrag: true,
-  controls: false,
-  autoplay: true
-});
-
 // POPUP
 function closeAllPopups() {
   var allPopup = document.querySelectorAll('.popup');
@@ -95,5 +84,16 @@ scrollToTopBtn.onclick = function() {
     behavior: 'smooth'
   });
 };
+
+// SLIDER
+var slider = tns({
+  container: ".picture",
+  items: 1,
+  slideBy: "page",
+  mouseDrag: true,
+  controls: false,
+  autoplay: true
+});
+
 
 
