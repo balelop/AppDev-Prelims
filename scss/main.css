@@ -747,4 +747,21 @@ body {
     text-align: center;
     color: #ffffff;
   }
+}
+footer {
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#coco {
+  background-color: #14B1BB;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 40px;
+  width: 40px;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
