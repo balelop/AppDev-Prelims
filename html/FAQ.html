@@ -198,11 +198,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="picture_content">
-                        <div class="picture">
-                            <img src="../img/ab3.jpg" alt="">
-                            <img src="../img/ab1.jpg" alt="">
-                        </div>
+                    <div class="picture_bottom">
+                        <img src="../img/ab3.jpg" alt="">
+                        <img src="../img/ab1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -286,6 +284,30 @@
         <script src="https://kit.fontawesome.com/44142ae2b1.js" crossorigin="anonymous"></script>
         <script src="../js/script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <script type="module">
+            var slider = tns({
+            container: ".picture",
+            items: 1,
+            slideBy: "page",
+            mouseDrag: true,
+            controls: false,
+            autoplay: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            });
+        </script>
+        <script type="module">
+            var slider = tns({
+            container: ".picture_bottom",
+            items: 1,
+            slideBy: "page",
+            mouseDrag: true,
+            controls: false,
+            autoplay: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            });
+        </script>
     </body>
 </html>
 
